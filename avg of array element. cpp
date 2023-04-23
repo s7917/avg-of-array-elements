@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n ;
+    float num[100] , sum=0.0 , avg;
+
+    cout<<"enter the value of n "<<endl;
+    cin>>n;
+
+    for(int i=1 ; i<n ; i++){
+        cout<<i<<" . Enter the number ";
+        cin>>num[i];
+        sum=sum+num[i];
+    }
+    cout<<endl;
+    avg =sum/n;
+    cout<<"the avg is"<<avg;
+    
+    return 0;
+}
